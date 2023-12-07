@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Smythe&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/68006bc5a8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <title>Menu</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="container">
+                <h2>Jimmy's Diner</h2>
+                <p>The best burgers and pizzas in town</p>
+            </div>
+        </header>
+        <section class="menu-section" id="menu-section">
+
+        </section>
+        <!-- There's a better way to do this. But not - -->
+        <h5 class="solo-h5 hidden">Your order</h5>
+        <section class="order-section hidden">
+
+        </section>
+        <section class="total-section hidden">
+            <hr class="">
+            <div class="total-div">
+                <span>Total Price: </span><span class="total-span"></span>
+            </div>
+            <button class="order-btn">Complete Order</button>
+        </section>
+        <form action="" class="payment-modal hidden">
+            <h3>Enter card details</h3>
+            <input type="text" placeholder="Enter your name" id="name-input" required>
+            <input type="text" placeholder="Enter your card number" required>
+            <input type="text" placeholder="Enter CVV" required>
+            <button class="pay-btn">Pay</button>
+        </form>
+
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
